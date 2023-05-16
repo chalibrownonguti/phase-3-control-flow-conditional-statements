@@ -1,4 +1,12 @@
 def admin_login(username, password)
+  if (username.downcase == "admin" || username.upcase == "ADMIN") && password == "12345"
+    return "Access granted"
+  else
+    return "Access denied"
+  end
+end
+
+  
   # your code here
 end
 
